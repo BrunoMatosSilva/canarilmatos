@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { SRLWrapper } from 'simple-react-lightbox';
-import { Content, MenuCriacao, options, StyleCriacao } from "./styles";
+
+import { Content, StyleCriacao, MenuCriacao, options } from "../../styles/Galeria/index";
 
 import images from '../../data'
 import { HiFilter } from 'react-icons/hi'

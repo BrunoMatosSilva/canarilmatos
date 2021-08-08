@@ -1,10 +1,9 @@
 import React from 'react'
 import { getPrismicClient } from '../../services/prismic';
 import Prismic from '@prismicio/client'
-import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import Head from "next/head";
-import { Container } from './styles';
+import { Container } from '../../styles/Posts/index';
 
 export default function Blog({ posts }) {
     return (

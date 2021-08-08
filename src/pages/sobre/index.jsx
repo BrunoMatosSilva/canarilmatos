@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import { Content, Container, Bg } from "./styles";
+import { Content, Container, Bg } from "../../styles/Sobre/index";
 
 export default function Sobre() {
     return (

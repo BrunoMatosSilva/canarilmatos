@@ -1,7 +1,7 @@
 import Prismic from '@prismicio/client'
 import { getPrismicClient } from '../../services/prismic';
 import { RichText } from 'prismic-dom'
-import { PostContainer } from './styles';
+import { PostContainer } from '../../styles/Posts/index';
 import Head from 'next/head';
 import { BsCalendar } from 'react-icons/bs'
 

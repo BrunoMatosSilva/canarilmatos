@@ -1,9 +1,8 @@
 import Head from "next/head";
 import React from "react";
-import emailjs from "emailjs-com"
-
+import emailjs from "emailjs-com";
+import { Container, Bg, Content } from "../../styles/Contato/index";
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
-import { Container, Content, Bg } from "./styles";
 
 export default function Contato() {
 
