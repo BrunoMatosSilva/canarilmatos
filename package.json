@@ -6,10 +6,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@prismicio/client": "^5.1.0",
+    "emailjs-com": "^3.2.0",
     "next": "latest",
+    "prismic-dom": "^2.2.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
     "react-is": "^17.0.2",
+    "simple-react-lightbox": "^3.6.6",
     "styled-components": "^5.2.3"
   },
   "devDependencies": {
