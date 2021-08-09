@@ -8,7 +8,7 @@ export const Bg = styled.main`
         height: 100%;
     }
 
-    @media only screen and (min-width:426px) and (max-width: 768px) {
+    @media only screen and (min-width:541px) and (max-width: 768px) {
         height: calc(100vh - 45px);
     }
 `;
@@ -28,7 +28,7 @@ h2 {
     color: var(--text-body);
     text-shadow: 0px 2px 5px rgba(0,0,0,0.54);
 
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 540px) {
         font-size: 2rem;
         text-align: center;
     }
@@ -46,13 +46,13 @@ flex-direction: row;
 align-items: center;
 margin-bottom: 4rem;
 
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 540px) {
         flex-direction: column;
         margin: 0 1rem;
         margin-bottom: 2rem
     }
 
-    @media only screen and (min-width:426px) and (max-width: 768px) {
+    @media only screen and (min-width:541px) and (max-width: 768px) {
         flex-direction: column;
         margin: 2rem;
     }
@@ -63,12 +63,12 @@ img {
 
     border-radius: 5px 0 0 5px;
     
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 540px) {
         height: 400px;
         border-radius: 5px 5px 0 0;
     }
 
-    @media only screen and (min-width:426px) and (max-width: 768px) {
+    @media only screen and (min-width:541px) and (max-width: 768px) {
         display: none;
     }
 }
@@ -78,7 +78,7 @@ div {
     flex-direction: column;
     padding: 1rem;
 
-    @media only screen and (min-width:426px) and (max-width: 768px) {
+    @media only screen and (min-width:541px) and (max-width: 768px) {
         max-height: 450px;
         padding-bottom: 4rem;
     }
