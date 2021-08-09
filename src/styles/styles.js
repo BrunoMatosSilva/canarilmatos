@@ -11,7 +11,7 @@ flex-direction: row;
 align-items: center;
 justify-content: space-between;
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 540px) {
     flex-direction: column;
 }
 
@@ -25,7 +25,7 @@ section {
         font-size: 2.2rem;
         margin-bottom: 2.5rem;
 
-        @media only screen and (max-width: 425px) {
+        @media only screen and (max-width: 540px) {
             text-align: center;
         }
     }
@@ -34,7 +34,7 @@ section {
         font-size: 1.5rem;
         margin-bottom: 2.5rem;
 
-        @media only screen and (max-width: 425px) {
+        @media only screen and (max-width: 540px) {
             text-align: justify;
         }
         
@@ -68,7 +68,7 @@ export const ContainerImg = styled.div`
         img {
             max-height: 450px;
 
-            @media only screen and (max-width: 425px) {
+            @media only screen and (max-width: 540px) {
                 display: none;
             }
 

@@ -10,7 +10,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    @media only screen and (min-width:426px) and (max-width: 768px) {
+    @media only screen and (min-width:541px) and (max-width: 768px) {
         margin-left: 5rem;
         margin-right: 5rem;
         padding-bottom: 2rem;
@@ -31,7 +31,7 @@ export const Container = styled.div`
         font-weight: 700;
         transition: all 0.2s;
 
-        @media only screen and (max-width: 425px) {
+        @media only screen and (max-width: 540px) {
             display: none;
         }
 
@@ -68,7 +68,7 @@ export const CardContainer = styled.div`
         font-size: 0.95rem;
         color: var(--text-body);
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 540px) {
             padding-top: 2rem;
         }
     }
@@ -100,6 +100,11 @@ export const CardContainer = styled.div`
         display: flex;
         align-items: center;
         vertical-align: middle;
+
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+
     strong {
         font-weight: 700;
         color: var(--text-brown);
@@ -138,12 +143,12 @@ export const Grid = styled.div`
         margin: 0 3rem;
     }
 
-    @media only screen and (min-width: 376px) and (max-width: 425px) {
+    @media only screen and (min-width: 376px) and (max-width: 540px) {
         grid-template-columns: repeat(1, 1fr);
         margin: 0 5rem;
     }
 
-    @media only screen and (min-width:426px) and (max-width: 768px) {
+    @media only screen and (min-width:541px) and (max-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 6rem;
     }
