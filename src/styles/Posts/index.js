@@ -96,7 +96,7 @@ article {
         padding-top: 1rem;
         padding-bottom: 2rem;
 
-        @media only screen and (max-width: 425px) {
+        @media only screen and (max-width: 540px) {
             max-width: 300px;
         }
     }
@@ -117,7 +117,7 @@ article {
         width: 600px;
         padding-bottom: 1rem ;
 
-        @media only screen and (max-width: 425px) {
+        @media only screen and (max-width: 540px) {
             max-width: 300px;
         }
     }
