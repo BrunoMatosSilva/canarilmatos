@@ -24,7 +24,7 @@ export function Cards({ posts }) {
                                         <p>{post.description}</p>
 
                                         <div className="rodapeCard">
-                                            <strong>Contineu lendo </strong><span><HiArrowRight /></span>
+                                            <strong>Continuar lendo </strong><span><HiArrowRight /></span>
                                         </div>
                                     </div>
                                 </section>
