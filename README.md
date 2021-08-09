@@ -1,84 +1,58 @@
-# Example app with styled-components
+<div align="center"><img src="https://user-images.githubusercontent.com/69808542/128720833-847ba49b-6aac-4a8d-91be-6c3c2c41d795.PNG" /></div>
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/vercel/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+<h1 align="center">CM - Canaril Matos</h1>
+<p align="center">Foi desenvolvido um Website/Blog com o tema de criação de canarios de raça. Ideia e utilizar o blog como uma central de conhecimento para criadores, além de demonstrar alguns canarios do criador do site.</p>
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+[Figma Projeto](https://www.figma.com/file/wjsUCTQxEdJb5C3S125wu3/Canaril-Matos?node-id=0%3A1)
 
-## Preview
+<div align="center"><img src="https://img.shields.io/github/issues/BrunoMatosSilva/canarilmatos" />
+<img src="https://img.shields.io/github/forks/BrunoMatosSilva/canarilmatos" />
+<img src="https://img.shields.io/github/stars/BrunoMatosSilva/canarilmatos" /></div>
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+<h1 align="center">Tecnologias Usadas</h1>
+<ul>
+<li>NextJS.</li>
+<li>Prismic CMS.</li>
+<li>Styled Components.</li>
+<li>EmailJS.</li>
+</ul>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-styled-components)
+<h1 align="center">O que temos no Projeto</h1>
+<ul>
+<li>Design Responsivo Completo.</li>
+<li>Posts feitos diretamente no CMS Prismic.</li>
+<li>Styled Components usado para todo o Css do site</li>
+<li>EmailJS usado no form para enviar os dados para o e-mail do cliente</li>
+</ul>
 
-## Deploy your own
+<h1 align="center">Pré-Requisito</h1>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+<p>Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+Git, Node.js.</p>
+<p>Além disto é bom ter um editor para trabalhar com o código como VSCode</p>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+<h1 align="center">Instalação</h1>
 
 ```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
+# Abra um terminal e copie esse repositorio e cole esse comando:
+git clone https://github.com/BrunoMatosSilva/canarilmatos.git 
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+```bash
+# Acesse a pasta da aplicação
+$ cd canarilmatos
 
-### Try it on CodeSandbox
+# Crie um arquivo .env.local e coloque as variaveis
+PRISMIC_API_ENDPOINT=
+PRISMIC_ACCESS_TOKEN=
 
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
+# Instale as dependências
+$ yarn
 
-### Notes
-
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
-
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
-
-**components/StyledLink.js**
-
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
-
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
-
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
+# Inicie a aplicação
+$ yarn dev
 ```
 
-**pages/index.js**
+<h1 align="center">Link do Projeto Online</h1>
 
-```javascript
-import StyledLink from '../components/StyledLink'
-
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
-
-</details>
+[Canaril Matos](https://canarilmatos.vercel.app)
