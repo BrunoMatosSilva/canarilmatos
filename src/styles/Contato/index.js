@@ -78,6 +78,10 @@ div {
         max-width: 300px;
         }
 
+        @media only screen and (min-width: 426px) and (max-width: 520px) {
+            width: 350px;
+        }
+
         input {
             border: none;
             line-height: 2.5rem;
