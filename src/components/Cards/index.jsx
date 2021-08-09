@@ -11,7 +11,7 @@ export function Cards({ posts }) {
             </Container>
             <Grid>
                 {posts.map(post => (
-                    <Link href={`/posts/${post.slug}`} key={post.slug}>
+                    <Link href={`/posts/publication/${post.slug}`} key={post.slug}>
                         <a>
                             <CardContainer>
                                 <section>

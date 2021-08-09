@@ -1,7 +1,7 @@
 import Prismic from '@prismicio/client'
-import { getPrismicClient } from '../../services/prismic';
+import { getPrismicClient } from '../../../services/prismic';
 import { RichText } from 'prismic-dom'
-import { PostContainer } from '../../styles/Posts/index';
+import { PostContainer } from '../../../styles/Posts/index';
 import Head from 'next/head';
 import { BsCalendar } from 'react-icons/bs'
 
@@ -26,28 +26,9 @@ export default function Post({ posts }) {
 }
 
 
-export const getStaticPaths = async () => {
-    const prismic = getPrismicClient();
-    const posts = await prismic.query(
-        [Prismic.predicates.at('document.type', 'posts')],
-        {
-            fetch: ['post.title'],
-        }
-    );
-    const paths = posts.results.map(post => ({
-        params: {
-            slug: post.uid,
-        },
-    }));
-    return {
-        paths,
-        fallback: true,
-    };
-};
-
-export const getStaticProps = async ({ params }) => {
+export const getServerSideProps = async ({ req, params }) => {
     const { slug } = params;
-    const prismic = getPrismicClient();
+    const prismic = getPrismicClient(req);
     const response = await prismic.getByUID('posts', String(slug), {});
 
     const posts = {
