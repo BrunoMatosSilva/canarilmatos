@@ -131,9 +131,13 @@ section {
         padding: 2rem;
         }
 
-        @media only screen and (min-width:426px) and (max-width: 768px) {
-        padding-top: 2rem;
-    }
+        @media only screen and (min-width: 426px) and (max-width: 520px) {
+            width: 350px;
+            padding-top: 1rem;
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+        }
 
     img {
         align-items: center;
