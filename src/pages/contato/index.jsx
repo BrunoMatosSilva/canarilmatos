@@ -50,7 +50,7 @@ export default function Contato() {
                             <h3><span><AiOutlineMail /></span>E-mail <span className="email">cmcanaril@gmail.com</span></h3>
 
 
-                            <h3><span><AiOutlinePhone /></span>Whatsapp <strong>(11) 98811-9001</strong></h3>
+                            <h3><span><AiOutlinePhone /></span>Whatsapp <strong>(11) 95961-9314</strong></h3>
 
                         </section>
                     </Content>
