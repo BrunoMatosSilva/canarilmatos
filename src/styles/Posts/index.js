@@ -9,6 +9,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-between;
+padding-bottom: 2rem;
 
 a { 
     display: block;
@@ -16,11 +17,13 @@ a {
 & + a {
         margin-top: 0.5rem;
         padding-top: 2rem;
-        border-top: 1px solid var(--bg-write);
     }
 
 section {
+    background-color: var(--bg-write);
     margin: 0rem 2rem 0 2rem;
+    padding: 1rem;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     transition: all 0.2s;
@@ -37,11 +40,11 @@ section {
         font-size: 1.5rem;
         margin-bottom: 1rem;
         margin-top: 0.8rem;
+        border-bottom: 1px solid var(--text-brown);
     }
 
     p {
         font-size: 1rem;
-        margin-bottom: 2.5rem;
         line-height: 1.625rem;
     }
 
@@ -58,12 +61,16 @@ padding-top: 8.5rem;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-between; 
+justify-content: space-between;
+padding-bottom : 2rem;
 
 article {
-    margin: 0rem 2rem 0 2rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
+    background-color: var(--bg-write);
+    border-radius: 5px;
+    padding: 1rem;
     transition: all 0.2s;
 
     h2 {
