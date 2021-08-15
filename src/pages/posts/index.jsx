@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Head from "next/head";
 import { Container } from '../../styles/Posts/index';
 
+
 export default function Blog({ posts }) {
     return (
         <>
